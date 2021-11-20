@@ -1,0 +1,360 @@
+@import url(fonts.css);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1255px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==============================
+HEADER
+============================== */
+.header {
+  padding: 20px 0;
+  background-color: rgba(246, 246, 249, 1);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px 5px rgb(255, 255, 255);
+  border-radius: 1px;
+}
+
+.curency-list {
+  display: flex;
+}
+
+.curency-item {
+  margin-left: 25px;
+  color: rgba(122, 122, 122, 1);
+  font-size: 16px;
+}
+
+strong {
+  color: rgba(40, 81, 147, 1);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.top-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+}
+
+.searching-button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.language-button {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+
+.language-select {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.language-select:before {
+  content: url(../images/cif_ru.svg);
+  border-radius: 50%;
+}
+
+.follow-link {
+  width: 146px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
+  border-radius: 5px;
+}
+
+.telegram-link {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 2px 2px rgba(246, 246, 249, 1);
+  border-radius: 3px;
+}
+
+.item-link {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: rgba(81, 81, 81, 1);
+}
+
+.banner {
+  margin: 0 auto;
+}
+
+/* =====================
+MAIN
+===================== */
+.covid {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(246, 246, 249, 1);
+  border-radius: 3px;
+}
+
+.covid-heading {
+  display: flex;
+  width: 550px;
+  margin: 0;
+}
+
+.covid-heading::before {
+  content: url(../images/icon-covid.png);
+  margin-right: 10px;
+  width: 43px;
+  height: 45px;
+}
+
+.covid-statistics {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.covid-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.covid-list::before {
+  margin-right: 10px;
+}
+
+.covid-list:nth-child(1)::before {
+  content: url("../images/icon-infected.png");
+}
+
+.covid-list:nth-child(2)::before {
+  content: url("../images/icon-recovered.png");
+}
+
+.covid-list:nth-child(3)::before {
+  content: url("../images/icon-dead.png");
+}
+
+.list-info {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.list-info p {
+  margin: 0;
+}
+
+.infected {
+  color: rgba(219, 0, 0, 1);
+}
+
+.recovered {
+  color: rgba(5, 177, 53, 1);
+}
+
+.died {
+  color: rgba(0, 0, 0, 1);
+}
+
+.list-number {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.top-news {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-content {
+  margin-bottom: 30px;
+}
+
+.news-heading {
+  width: 380px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(32, 32, 32, 1);
+}
+
+.time {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(107, 109, 151, 1);
+}
+
+.news-notification {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(239, 186, 84, 0.18);
+  border-radius: 5px;
+}
+
+.notification-paragraph::before {
+  content: url(../images/bell-icon.svg);
+  margin-right: 10px;
+}
+
+.notification-paragraph {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.notification-button {
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    90deg,
+    #fe5c28 0%,
+    rgba(255, 139, 54, 0.9) 88.43%
+  );
+  border-radius: 3px;
+  border: none;
+}
+
+/* ============================
+FOOTER
+============================ */
+.footer {
+  margin-top: 20px;
+  background-color: rgba(41, 80, 147, 1);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 3px solid rgba(19, 60, 130, 1);
+}
+
+.link-info {
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-telegram-link {
+  padding: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(41, 80, 147, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.footer-heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.about-content {
+  width: 365px;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.bottom-right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-list-item {
+  width: 360px;
+  padding: 6px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 1);
+}
